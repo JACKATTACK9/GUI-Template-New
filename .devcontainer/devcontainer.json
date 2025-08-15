@@ -1,0 +1,31 @@
+{
+    "name": "Java w/ Desktop",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
+	},
+    "forwardPorts": [6080],
+    "portsAttributes": {
+        "6080": {
+            "label": "desktop"
+        }
+	    
+    },
+    // Configure tool-specific properties.
+"customizations": {
+	"vscode": {
+		"extensions": [
+			"redhat.java",
+			"vscjava.vscode-java-debug",
+			"vscjava.vscode-java-dependency"
+		]
+	}
+}
+	
+}
+
