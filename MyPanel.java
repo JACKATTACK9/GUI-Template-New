@@ -1,0 +1,22 @@
+import javax.swing.*;
+import java.awt.event.*;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.*;
+import java.awt.Color;
+import javax.swing.border.Border;
+import javax.swing.BorderFactory;
+
+public class MyPanel {
+  MyPanel() { // All of your code today goes below this line!
+
+
+
+
+
+
+
+// You should have not code below this line!
+   }
+}
