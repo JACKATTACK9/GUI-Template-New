@@ -30,27 +30,17 @@ public class MyFrame extends JFrame {
 
         // Popups
         dangerButton.addActionListener(e -> {
+            while (true) {
             
-            // remember when we learnt loops? try to edit this piece of code to make however many popups you want!
             for(int i = 0; i < 20; i++) {
-                JOptionPane.showMessageDialog(null, "YOU CANNOT ESCAPE! MUHAHAHAHHAH!!!!!", "ALERT!!!!!", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "VIRUS DETECTED, COMPUTER DELETION IN PROGRESS ", "INFINITE LOOP", JOptionPane.ERROR_MESSAGE);
+
+                                              this.add(dangerButton);
+
+                                              this.setvisible(true);
             }
         });
 
-        // how can i make this loop forever till the computer crashes????
-
-        // change the above code to:
-
-        // dangerButton.addActionListener(e -> {
-        //     while (true) {
-        //         JOptionPane.showMessageDialog(null, "YOU CANNOT ESCAPE!", "INFINITE LOOP", JOptionPane.ERROR_MESSAGE);
-        //     }
-        // });
-
-        // a bit of a warning here... i dont know if this will work well... especially if you're on a chromebook... 
-            
-        this.add(dangerButton);
-
-        this.setVisible(true);
+        
     }
 }
